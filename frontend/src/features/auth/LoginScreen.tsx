@@ -119,18 +119,31 @@ export function LoginScreen({ showToast }: LoginScreenProps) {
         <div className="login-separator">Or</div>
 
         <div className="social-row" aria-label="Social sign in options">
+          {/* Facebook */}
           <button className="social-button social-button--facebook" aria-label="Continue with Facebook" type="button">
-            <span aria-hidden="true">f</span>
-          </button>
-          <button className="social-button social-button--telegram" aria-label="Continue with Telegram" type="button">
-            <svg aria-hidden="true" viewBox="0 0 28 28">
-              <path d="M25.6 4.2 21.9 23c-.3 1.3-1.1 1.6-2.2 1l-5.8-4.3-2.8 2.7c-.3.3-.6.6-1.2.6l.4-5.9L21 7.5c.5-.4-.1-.7-.7-.3L7.1 15.5l-5.7-1.8c-1.2-.4-1.2-1.2.3-1.8L24 3.3c1-.4 2 .2 1.6.9Z" />
+            <svg aria-hidden="true" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#1877F2"/>
+              <path d="M22 16h-4v-2c0-.9.4-1.5 1.8-1.5H22V9.1A22 22 0 0 0 19.4 9c-2.7 0-4.4 1.6-4.4 4.6V16h-3v3.5h3V32h4V19.5h2.7L22 16Z" fill="#fff"/>
             </svg>
           </button>
+
+          {/* Telegram */}
+          <button className="social-button social-button--telegram" aria-label="Continue with Telegram" type="button">
+            <svg aria-hidden="true" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#29A8E8"/>
+              <path d="M6.5 15.6 24.8 8.5c.8-.3 1.6.2 1.3 1.4l-2.9 13.7c-.2 1-.9 1.2-1.8.8l-4.8-3.5-2.3 2.2c-.3.2-.5.4-1 .4l.4-4.9 9.6-8.7c.4-.4-.1-.6-.6-.2L9.2 17.9l-4.7-1.5c-1-.3-1-.9 2-2.8Z" fill="#fff"/>
+            </svg>
+          </button>
+
+          {/* Google */}
           <button className="social-button social-button--google" aria-label="Continue with Google" type="button">
-            <span aria-hidden="true">
-              <b>G</b>
-            </span>
+            <svg aria-hidden="true" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="32" height="32" rx="8" fill="#fff"/>
+              <path d="M28.6 16.3c0-.9-.1-1.8-.2-2.6H16v5h7.1a6 6 0 0 1-2.6 4v3.3h4.2c2.5-2.3 3.9-5.6 3.9-9.7Z" fill="#4285F4"/>
+              <path d="M16 29c3.6 0 6.6-1.2 8.7-3.2l-4.2-3.3c-1.2.8-2.7 1.3-4.5 1.3-3.4 0-6.3-2.3-7.4-5.4H4.3v3.4A13 13 0 0 0 16 29Z" fill="#34A853"/>
+              <path d="M8.6 18.4A7.8 7.8 0 0 1 8.2 16c0-.8.1-1.6.4-2.4V10.2H4.3A13 13 0 0 0 3 16c0 2.1.5 4.1 1.3 5.8l4.3-3.4Z" fill="#FBBC05"/>
+              <path d="M16 8.3c2 0 3.7.7 5.1 2l3.8-3.8C22.6 4.2 19.6 3 16 3A13 13 0 0 0 4.3 10.2l4.3 3.4C9.7 10.6 12.6 8.3 16 8.3Z" fill="#EA4335"/>
+            </svg>
           </button>
         </div>
 
