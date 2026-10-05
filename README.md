@@ -43,12 +43,16 @@ VITE_API_BASE_URL=http://localhost:4000
 
 ## Deployment
 
+Full deployment notes are available in [DEPLOYMENT.md](DEPLOYMENT.md).
+
 ### Backend on Render
 
 - Root directory: `backend`
 - Build command: `npm install`
 - Start command: `npm start`
-- Environment variable: `FRONTEND_ORIGIN=https://your-vercel-domain.vercel.app`
+- Environment variables:
+  - `FRONTEND_ORIGIN=https://your-vercel-domain.vercel.app`
+  - `JWT_SECRET=your-long-random-secret`
 
 ### Frontend on Vercel
 

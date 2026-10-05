@@ -1,4 +1,4 @@
-import { Eye, EyeOff, Facebook, Send } from "lucide-react";
+import { Eye, EyeOff } from "lucide-react";
 import { FormEvent, useState } from "react";
 import { BrandLogo } from "../../components/BrandLogo";
 import { ApiError, loginAsGuest, loginUser } from "../../services/api";
@@ -119,14 +119,18 @@ export function LoginScreen({ showToast }: LoginScreenProps) {
         <div className="login-separator">Or</div>
 
         <div className="social-row" aria-label="Social sign in options">
-          <button aria-label="Continue with Facebook" type="button">
-            <Facebook size={30} />
+          <button className="social-button social-button--facebook" aria-label="Continue with Facebook" type="button">
+            <span aria-hidden="true">f</span>
           </button>
-          <button aria-label="Continue with Telegram" type="button">
-            <Send size={30} />
+          <button className="social-button social-button--telegram" aria-label="Continue with Telegram" type="button">
+            <svg aria-hidden="true" viewBox="0 0 28 28">
+              <path d="M25.6 4.2 21.9 23c-.3 1.3-1.1 1.6-2.2 1l-5.8-4.3-2.8 2.7c-.3.3-.6.6-1.2.6l.4-5.9L21 7.5c.5-.4-.1-.7-.7-.3L7.1 15.5l-5.7-1.8c-1.2-.4-1.2-1.2.3-1.8L24 3.3c1-.4 2 .2 1.6.9Z" />
+            </svg>
           </button>
-          <button className="google-button" aria-label="Continue with Google" type="button">
-            G
+          <button className="social-button social-button--google" aria-label="Continue with Google" type="button">
+            <span aria-hidden="true">
+              <b>G</b>
+            </span>
           </button>
         </div>
 

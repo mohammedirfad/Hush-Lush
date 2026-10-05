@@ -1,4 +1,5 @@
 import { ArrowLeft, BadgeCheck, Clock, LogOut, Mail, ShieldCheck, UserRound } from "lucide-react";
+import { BrandLogo } from "../../components/BrandLogo";
 import { useAuth } from "../auth/auth-context";
 
 type AccountScreenProps = {
@@ -22,10 +23,7 @@ export function AccountScreen({ onNavigate, showToast }: AccountScreenProps) {
           <ArrowLeft size={22} />
           <span>Menu</span>
         </button>
-        <div className="header-logo">
-          <span className="logo-card">HL</span>
-          <span>Hush Lush</span>
-        </div>
+        <BrandLogo compact />
       </header>
 
       <section className="account-hero">
